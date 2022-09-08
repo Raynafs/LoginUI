@@ -4,45 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#A0CEFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="189dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="112dp"
-        android:text="HI Rachel"
+        android:text="Welcome "
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="151dp"
         android:layout_height="73dp"
-        android:layout_marginTop="352dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/button"
         android:text="Login"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         app:strokeColor="#2EC6DA" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="260dp"
         android:layout_height="65dp"
+        android:layout_marginBottom="77dp"
         android:ems="10"
-        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:text="Email"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -51,7 +56,7 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="98dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
